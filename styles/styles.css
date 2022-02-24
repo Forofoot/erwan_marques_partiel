@@ -1,0 +1,201 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: black;
+}
+
+header {
+  padding: 15px 20px;
+  height: 30vh;
+}
+
+header h1 {
+  opacity: .5;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header nav ul li:last-of-type {
+  margin: 0;
+}
+
+header nav ul li a {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+  }
+  header nav h1 {
+    text-align: center;
+  }
+  header nav .social {
+    display: none;
+  }
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section article {
+  aspect-ratio: 1/1;
+  flex: 1 0 20%;
+  padding: 30px;
+  background: #000000;
+  border: 1px solid #46CC9A;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+}
+
+section article h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+
+section article h2 span {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+section article ol li p {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  display: flex;
+  color: #46CC9A;
+}
+
+section article ol li.location p {
+  text-transform: none;
+  margin-top: 15px;
+}
+
+section article ol li.location p i {
+  margin-right: 15px;
+}
+
+section article .toggle {
+  font-size: 2rem;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  color: #46CC9A;
+}
+
+section article .toggle:hover {
+  cursor: pointer;
+}
+
+section article:hover h2,
+section article:hover ol {
+  display: none;
+}
+
+section article:hover:nth-of-type(1) {
+  background-image: url(../pictures/article/img1.jpg);
+}
+
+section article:hover:nth-of-type(2) {
+  background-image: url(../pictures/article/img2.jpg);
+}
+
+section article:hover:nth-of-type(3) {
+  background-image: url(../pictures/article/img3.jpg);
+}
+
+section article:hover:nth-of-type(4) {
+  background-image: url(../pictures/article/img4.jpg);
+}
+
+section article:hover:nth-of-type(5) {
+  background-image: url(../pictures/article/img5.jpg);
+}
+
+section article:hover:nth-of-type(6) {
+  background-image: url(../pictures/article/img6.jpg);
+}
+
+section article:hover:nth-of-type(7) {
+  background-image: url(../pictures/article/img7.jpg);
+}
+
+section article:hover:nth-of-type(8) {
+  background-image: url(../pictures/article/img8.jpg);
+}
+
+@media screen and (max-width: 1250px) {
+  section article {
+    flex: 1 0 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section article {
+    flex: 1 0 100%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

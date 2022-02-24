@@ -1,0 +1,41 @@
+body{
+    background: black;
+}
+header{
+    padding: 15px 20px;
+    height: 30vh;
+    h1{
+        opacity: .5;
+    }
+    nav{
+        display: flex;
+        justify-content:space-between;
+        ul{
+            li{
+                display: inline-block;
+                margin-right: 20px;
+                &:last-of-type{
+                    margin: 0;
+                }
+                a{
+                    font-size: 1.5rem;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    header{
+        nav{
+            flex-direction: column;
+            h1{
+                text-align: center;
+            }
+            .social{
+                display: none;
+            }
+        }
+    }
+}
